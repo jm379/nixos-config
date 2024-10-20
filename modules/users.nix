@@ -1,5 +1,5 @@
 { config, pkgs, inputs, ... }: {
-  # Define a user account. Don't forget to set a password with ‘passwd’.
+
   users.users.rcav = {
     isNormalUser = true;
     description = "Rcav";
@@ -7,5 +7,9 @@
     packages = with pkgs; [];
   };
 
-  home-manager.users.rcav = (import ./home-manager);
+  home-manager = {
+    extraSpecialArgs = { inherit inputs; };
+    backupFileExtension = "backup";
+    users.rcav = (import ./home-manager);
+  };
 }
