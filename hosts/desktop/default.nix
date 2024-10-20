@@ -14,6 +14,7 @@
   environment.systemPackages = with pkgs; [
     vim
     wget
+    libnotify
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
