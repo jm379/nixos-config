@@ -5,12 +5,16 @@
     ./firefox.nix
     ./kitty.nix
     ./hyprland.nix
+    ./neovim
   ];
 
   home.packages = with pkgs; [
     zip
     unzip
-    neovim
+    ripgrep
+    fd
+    zig
+    font-awesome
   ];
 
   home.stateVersion = "24.05";

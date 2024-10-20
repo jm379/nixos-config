@@ -16,6 +16,7 @@
     wget
     libnotify
     hyprland
+    htop
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
