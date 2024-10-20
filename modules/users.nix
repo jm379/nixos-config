@@ -7,6 +7,11 @@
     packages = with pkgs; [];
   };
 
+  services.displayManager = {
+    autoLogin.enable = true;
+    autoLogin.user = "rcav";
+  };
+
   home-manager = {
     extraSpecialArgs = { inherit inputs; };
     backupFileExtension = "backup";

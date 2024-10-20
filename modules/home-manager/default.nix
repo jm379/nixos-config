@@ -3,6 +3,7 @@
   imports = [
     ./git.nix
     ./firefox.nix
+    ./kitty.nix
     ./hyprland.nix
   ];
 
@@ -12,5 +13,5 @@
     neovim
   ];
 
-  home.stateVersion = "24.11";
+  home.stateVersion = "24.05";
 }

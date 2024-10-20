@@ -4,7 +4,7 @@
     ./network.nix
     ./boot.nix
     ../../modules/printer.nix
-    ../../modules/plasma6.nix
+    ../../modules/hyprland.nix
     ../../modules/audio.nix
     ../../modules/i18n.nix
     ../../modules/users.nix
@@ -15,6 +15,7 @@
     vim
     wget
     libnotify
+    hyprland
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
