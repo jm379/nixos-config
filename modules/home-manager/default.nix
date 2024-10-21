@@ -16,6 +16,7 @@
     zig
     cargo
     font-awesome
+    jetbrains-mono
     catppuccin-cursors.mochaDark
     swww
     waypaper

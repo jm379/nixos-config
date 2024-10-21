@@ -8,8 +8,6 @@
   wayland.windowManager.hyprland = {
     enable = true;
     settings = {
-      monitor = "DP-3, 2560x1440@239.96, 0x0, 1";
-
       general = {
         "col.active_border" = "rgba(00cce6ff) rgba(5b00c4ff) 45deg";
         "col.inactive_border" = "rgba(666666ff) rgba(808080e3) 45deg";
