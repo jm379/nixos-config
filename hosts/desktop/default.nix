@@ -17,6 +17,7 @@
     libnotify
     hyprland
     htop
+    nautilus
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
