@@ -4,8 +4,9 @@
     ./git.nix
     ./firefox.nix
     ./kitty.nix
+    ./obs.nix
     ./hyprland
-    ./neovim
+    ./neovim # Move to NixVim
   ];
 
   home.packages = with pkgs; [
@@ -26,6 +27,7 @@
     clipse
     wl-clipboard
     gccgo14
+    ffmpeg-full
   ];
 
   home.pointerCursor = {

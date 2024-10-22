@@ -8,6 +8,7 @@
     ../../modules/audio.nix
     ../../modules/i18n.nix
     ../../modules/users.nix
+    ../../modules/v4l2.nix
     inputs.home-manager.nixosModules.default
   ];
 
@@ -18,8 +19,11 @@
     hyprland
     htop
     nautilus
+    usbutils
+    pciutils
   ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   system.stateVersion = "24.05";
+  boot.kernelPackages = pkgs.linuxPackages_latest;
 }
