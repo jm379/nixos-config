@@ -15,6 +15,7 @@
     fd
     zig
     ruby
+    nodejs_22
     gnumake
     cargo
     font-awesome
