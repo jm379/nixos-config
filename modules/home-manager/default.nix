@@ -14,6 +14,8 @@
     ripgrep
     fd
     zig
+    ruby
+    gnumake
     cargo
     font-awesome
     jetbrains-mono

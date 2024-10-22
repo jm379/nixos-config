@@ -4,7 +4,11 @@ return {
     version = "*", 
     dependencies = 'nvim-tree/nvim-web-devicons',
     config = function()
-      require('bufferline').setup({})
+      require('bufferline').setup({
+        options = {
+          separator_style = "slant",
+        }
+      })
 
       vim.keymap.set('n', ']b', ':BufferLineCycleNext<CR>', { desc = 'Next Buffer' })
       vim.keymap.set('n', '[b', ':BufferLineCyclePrev<CR>', { desc = 'Previous Buffer' })
