@@ -23,6 +23,8 @@
     catppuccin-cursors.mochaDark
     swww
     waypaper
+    clipse
+    wl-clipboard
     gccgo14
   ];
 

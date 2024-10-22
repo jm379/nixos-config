@@ -41,10 +41,6 @@
 	    "$mod, Y, toggleFloating"
         "ALT, Tab, cyclenext"
         "ALT CTRL, Tab, cyclenext, prev"
-
-        # Workspaces
-	    "$mod, Tab, workspace, e+1"
-	    "$mod SHIFT, Tab, workspace, e-1"
       ];
 
       bindm = [
@@ -52,7 +48,7 @@
         "$mod, mouse:273, resizewindow"
       ];
 
-      "exec-once" = "waybar & waypaper --random & kitty";
+      "exec-once" = "waybar & waypaper --random & clipse -listen & kitty";
     };
   };
 
