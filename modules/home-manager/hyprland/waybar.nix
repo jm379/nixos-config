@@ -3,14 +3,39 @@
     enable = true;
     settings = {
       mainBar = {
-        height = 30;
+        height = 32;
         spacing = 4;
-        modules-left = [ "hyprland/workspaces" ];
-        modules-center = [ "hyprland/window" ];
+        modules-left = [
+          "hyprland/workspaces"
+        ];
+        modules-center = [ 
+          "hyprland/window"
+        ];
         modules-right = [
-          "temperature"
           "clock"
         ];
+
+        "hyprland/workspaces" = {
+          format = "{icon}";
+          format-icons = {
+            active = "";
+            default = "";
+          };
+          persistent-workspaces = {
+            "*" = 5;
+          };
+        };
+
+        "hyprland/window" = {
+          icon = true;
+          icon-size = 20;
+        };
+
+        clock = {
+          format = "{:%H:%M}  ";
+          tooltip = true;
+          tooltip-format = "{:%d/%m/%Y}";
+        };
       };
     };
   };

@@ -25,6 +25,7 @@
         "$mod, SPACE, exec, rofi -show drun -replace -i"
         "$mod, E, exec, nautilus"
         "$mod, T, exec, kitty"
+        "$mod, B, exec, firefox"
 
         # Windows
         "$mod, Q, killactive"
@@ -41,6 +42,12 @@
 	    "$mod, Y, toggleFloating"
         "ALT, Tab, cyclenext"
         "ALT CTRL, Tab, cyclenext, prev"
+
+        # Workspaces
+        "$mod, Tab, workspace, e+1"
+        "$mod SHIFT, Tab, workspace, e-1"
+        "$mod ALT, L, movetoworkspace, e+1"
+        "$mod ALT, H, movetoworkspace, e-1"
       ];
 
       bindm = [
