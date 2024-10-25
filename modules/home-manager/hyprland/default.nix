@@ -55,7 +55,19 @@
         "$mod, mouse:273, resizewindow"
       ];
 
-      "exec-once" = "waybar & waypaper --random & clipse -listen & kitty";
+      "exec-once" = "waybar & clipse -listen & kitty";
+      # "exec-once" = "waybar & waypaper --random & clipse -listen & kitty";
+    };
+  };
+
+  services.hyprpaper = {
+    enable = true;
+    settings = {
+      ipc = "on";
+      splash = false;
+      splash_offset = 2.0;
+      preload = [ "~/Pictures/Wallpapers/nix-dark-gray.png" ];
+      wallpaper = [ ",~/Pictures/Wallpapers/nix-dark-gray.png" ];
     };
   };
 

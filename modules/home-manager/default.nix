@@ -6,6 +6,7 @@
     ./kitty.nix
     ./obs.nix
     ./hyprland
+    ./zsh.nix
     ./neovim # Move to NixVim
   ];
 
@@ -20,24 +21,22 @@
     gnumake
     cargo
     font-awesome
-    jetbrains-mono
-    catppuccin-cursors.mochaDark
     swww
     waypaper
     clipse
     wl-clipboard
     gccgo14
     ffmpeg-full
+    catppuccin-cursors.mochaDark
   ];
 
   home.pointerCursor = {
     gtk.enable = true;
+    x11.enable = true;
     package = pkgs.catppuccin-cursors.mochaDark;
-    name = "Catppuccing Mocha Dark";
-    size = 14;
+    name = "catppuccin-mocha-dark-cursors";
+    size = 18;
   };
-
-  gtk.enable = true;
 
   home.stateVersion = "24.05";
 }

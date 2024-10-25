@@ -4,8 +4,18 @@
     isNormalUser = true;
     description = "Rcav";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [];
+    shell = pkgs.zsh;
+    packages = with pkgs; [
+      zsh
+    ];
   };
+
+  fonts.packages = with pkgs; [
+    jetbrains-mono
+    inter
+  ];
+
+  programs.zsh.enable = true;
 
   services.displayManager = {
     autoLogin.enable = true;
