@@ -1,0 +1,17 @@
+* {
+  font-family: '0xProto Nerd Font';
+  font-size: 16px;
+}
+
+window#waybar {
+    background-color: transparent;
+    color: white;
+}
+
+#clock {
+  padding-right: 8px;
+}
+
+#network, #pulseaudio, #bluetooth {
+  padding-right: 16px;
+}

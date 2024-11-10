@@ -11,8 +11,7 @@
   };
 
   fonts.packages = with pkgs; [
-    jetbrains-mono
-    inter
+    nerdfonts
   ];
 
   programs.zsh.enable = true;

@@ -4,7 +4,7 @@
     ./git.nix
     ./firefox.nix
     ./kitty.nix
-    ./obs.nix
+    # ./obs.nix
     ./hyprland
     ./zsh.nix
     ./neovim # Move to NixVim

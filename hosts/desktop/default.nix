@@ -3,12 +3,16 @@
     ./hardware-configuration.nix
     ./network.nix
     ./boot.nix
-    ../../modules/printer.nix
-    ../../modules/hyprland.nix
+
     ../../modules/audio.nix
+    ../../modules/hyprland.nix
     ../../modules/i18n.nix
+    ../../modules/lact.nix
+    ../../modules/printer.nix
+    # ../../modules/v4l2.nix
+    ../../modules/ssh.nix
+    ../../modules/steam.nix
     ../../modules/users.nix
-    ../../modules/v4l2.nix
     inputs.home-manager.nixosModules.default
   ];
 
@@ -21,9 +25,17 @@
     nautilus
     usbutils
     pciutils
+    lm_sensors
+    overskride
   ];
 
+  nixpkgs.config.allowUnfree = true;
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   system.stateVersion = "24.05";
   boot.kernelPackages = pkgs.linuxPackages_latest;
+  hardware.bluetooth = {
+    enable = true;
+    powerOnBoot = true;
+  };
+  services.blueman.enable = true;
 }

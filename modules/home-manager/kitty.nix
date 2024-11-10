@@ -5,7 +5,7 @@
     font = {
       size = 14.0;
       package = pkgs.jetbrains-mono;
-      name = "JetBrains Mono NL";
+      name = "0xProto Nerd Font";
     };
     shellIntegration.enableZshIntegration = true;
     settings = {
