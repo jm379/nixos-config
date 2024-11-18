@@ -12,16 +12,21 @@
           "hyprland/window"
         ];
         modules-right = [
+          "tray"
           "pulseaudio"
           "network"
           "bluetooth"
-          # "temperature"
           "clock"
         ];
 
         "hyprland/window" = {
           icon = true;
           icon-size = 20;
+        };
+
+        tray = {
+          icon-size = 20;
+          spacing = 8;
         };
 
         pulseaudio = {
@@ -59,10 +64,6 @@
           tooltip-format-enumerate-connected = "{device_alias}";
           tooltip-format-enumerate-connected-battery = "{device_alias} {device_battery_percentage}%";
           on-click = "overskride";
-        };
-
-        temperature = {
-          format = "{temperatureC} °C";
         };
 
         clock = {

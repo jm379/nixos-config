@@ -11,6 +11,8 @@
       general = {
         "col.active_border" = "rgba(00cce6ff) rgba(5b00c4ff) 45deg";
         "col.inactive_border" = "rgba(666666ff) rgba(808080e3) 45deg";
+        gaps_in = 4;
+        gaps_out = 8;
       };
 
       decoration = {
@@ -56,7 +58,6 @@
       ];
 
       "exec-once" = "waybar & clipse -listen & kitty";
-      # "exec-once" = "waybar & waypaper --random & clipse -listen & kitty";
     };
   };
 

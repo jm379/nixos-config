@@ -12,6 +12,6 @@ window#waybar {
   padding-right: 8px;
 }
 
-#network, #pulseaudio, #bluetooth {
+#network, #pulseaudio, #bluetooth, #tray {
   padding-right: 16px;
 }
