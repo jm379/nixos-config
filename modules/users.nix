@@ -3,11 +3,20 @@
   users.users.rcav = {
     isNormalUser = true;
     description = "Rcav";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" ];
     shell = pkgs.zsh;
     packages = with pkgs; [
       zsh
+      docker
     ];
+  };
+
+  virtualisation.docker = {
+    # enable = true;
+    rootless = {
+      enable = true;
+      setSocketVariable = true;
+    };
   };
 
   fonts.packages = with pkgs; [
