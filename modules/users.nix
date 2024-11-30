@@ -1,5 +1,4 @@
 { config, pkgs, inputs, ... }: {
-
   users.users.rcav = {
     isNormalUser = true;
     description = "Rcav";
@@ -12,7 +11,6 @@
   };
 
   virtualisation.docker = {
-    # enable = true;
     rootless = {
       enable = true;
       setSocketVariable = true;
@@ -24,6 +22,11 @@
   ];
 
   programs.zsh.enable = true;
+  programs._1password.enable = true;
+  programs._1password-gui = {
+    enable = true;
+    polkitPolicyOwners = [ "rcav" ];
+  };
 
   services.displayManager = {
     autoLogin.enable = true;

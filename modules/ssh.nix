@@ -8,4 +8,8 @@
       PermitRootLogin = "no";
     };
   };
+
+  programs.ssh = {
+    startAgent = true;
+  };
 }

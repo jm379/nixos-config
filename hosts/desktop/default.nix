@@ -9,10 +9,10 @@
     ../../modules/i18n.nix
     ../../modules/lact.nix
     ../../modules/printer.nix
-    # ../../modules/v4l2.nix
     ../../modules/ssh.nix
     ../../modules/steam.nix
     ../../modules/users.nix
+    ../../modules/1password.nix
     inputs.home-manager.nixosModules.default
   ];
 
