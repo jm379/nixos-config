@@ -15,6 +15,15 @@
         gaps_out = 8;
       };
 
+      env = [
+        "HYPRCURSOR_THEME,catppuccin-mocha-dark-cursors"
+        "HYPRCURSOR_SIZE,32"
+      ];
+
+      monitor = [
+        ", 3840x2160@120, auto, 1.5"
+      ];
+
       decoration = {
         rounding = 8;
         shadow_offset = "0 5";

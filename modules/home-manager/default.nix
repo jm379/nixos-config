@@ -1,12 +1,11 @@
 { config, pkgs, inputs, ... }: {
-
   imports = [
     ./git.nix
     ./firefox.nix
     ./kitty.nix
     ./hyprland
     ./zsh.nix
-    ./neovim # Move to NixVim
+    ./neovim
   ];
 
   home.packages = with pkgs; [
@@ -34,8 +33,10 @@
     x11.enable = true;
     package = pkgs.catppuccin-cursors.mochaDark;
     name = "catppuccin-mocha-dark-cursors";
-    size = 18;
+    size = 32;
   };
 
-  home.stateVersion = "24.05";
+  gtk.enable = true;
+
+  home.stateVersion = "24.11";
 }
