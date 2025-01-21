@@ -2,9 +2,14 @@ return {
   {
     "neovim/nvim-lspconfig",
     config = function()
-      require'lspconfig'.ruby_lsp.setup {
+      local lspconfig = require('lspconfig')
+
+      -- ruby
+      lspconfig.ruby_lsp.setup {
         cmd = { 'bundle', 'exec', 'ruby-lsp' },
       }
+      -- zig
+      lspconfig.zls.setup {}
 
       vim.api.nvim_create_autocmd('LspAttach', {
         callback = function(args)

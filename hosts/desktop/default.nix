@@ -1,10 +1,11 @@
 { config, pkgs, inputs, ... }: {
   imports = [
+    ./audio.nix
+    ./bluetooth.nix
+    ./boot.nix
     ./hardware-configuration.nix
     ./network.nix
-    ./boot.nix
 
-    ../../modules/audio.nix
     ../../modules/hyprland.nix
     ../../modules/i18n.nix
     ../../modules/lact.nix
@@ -31,11 +32,14 @@
 
   nixpkgs.config.allowUnfree = true;
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
-  system.stateVersion = "24.11";
-  boot.kernelPackages = pkgs.linuxPackages_latest;
-  hardware.bluetooth = {
-    enable = true;
-    powerOnBoot = true;
+  nix.gc = {
+    automatic = true;
+    dates = "weekly";
+    options = "--delete-older-than 7d";
   };
-  services.blueman.enable = true;
+  system.stateVersion = "24.11";
+  system.autoUpgrade = {
+    enable = true;
+  };
+  boot.kernelPackages = pkgs.linuxPackages_latest;
 }

@@ -16,6 +16,7 @@ vim.o.relativenumber = true
 vim.o.cursorline = true
 vim.o.termguicolors = true
 vim.o.wrap = false
+vim.o.scl=yes
 
 -- Search
 vim.o.incsearch = true

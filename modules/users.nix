@@ -18,7 +18,7 @@
   };
 
   fonts.packages = with pkgs; [
-    nerdfonts
+    nerd-fonts._0xproto
   ];
 
   programs.zsh.enable = true;
@@ -36,6 +36,6 @@
   home-manager = {
     extraSpecialArgs = { inherit inputs; };
     backupFileExtension = "backup";
-    users.rcav = (import ./home-manager);
+    users.rcav = (import ../home-manager);
   };
 }

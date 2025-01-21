@@ -13,30 +13,23 @@
     unzip
     ripgrep
     fd
-    zig
-    ruby
-    nodejs_22
-    gnumake
-    cargo
     font-awesome
     swww
     waypaper
     clipse
     wl-clipboard
-    gccgo14
-    ffmpeg-full
     catppuccin-cursors.mochaDark
+    libreoffice
   ];
 
+  gtk.enable = true;
   home.pointerCursor = {
     gtk.enable = true;
     x11.enable = true;
     package = pkgs.catppuccin-cursors.mochaDark;
     name = "catppuccin-mocha-dark-cursors";
-    size = 32;
+    size = 24;
   };
 
-  gtk.enable = true;
-
-  home.stateVersion = "24.11";
+  home.stateVersion = "25.05";
 }

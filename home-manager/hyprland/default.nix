@@ -1,5 +1,4 @@
 { pkgs, lib, ...  }: {
-
   imports = [
     ./waybar.nix
     ./rofi.nix
@@ -17,7 +16,7 @@
 
       env = [
         "HYPRCURSOR_THEME,catppuccin-mocha-dark-cursors"
-        "HYPRCURSOR_SIZE,32"
+        "HYPRCURSOR_SIZE,28"
       ];
 
       monitor = [
@@ -26,8 +25,9 @@
 
       decoration = {
         rounding = 8;
-        shadow_offset = "0 5";
-        "col.shadow" = "rgba(00000000)";
+        shadow = {
+          offset = "0 5";
+        };
       };
 
       "$mod" = "SUPER";
