@@ -21,16 +21,21 @@
     nerd-fonts._0xproto
   ];
 
-  programs.zsh.enable = true;
-  programs._1password.enable = true;
-  programs._1password-gui = {
-    enable = true;
-    polkitPolicyOwners = [ "rcav" ];
+  programs = {
+    zsh.enable = true;
+    _1password.enable = true;
+    _1password-gui = {
+      enable = true;
+      polkitPolicyOwners = [ "rcav" ];
+    };
   };
 
-  services.displayManager = {
-    autoLogin.enable = true;
-    autoLogin.user = "rcav";
+  services = {
+    udisks2.enable=true;
+    displayManager = {
+      autoLogin.enable = true;
+      autoLogin.user = "rcav";
+    };
   };
 
   home-manager = {

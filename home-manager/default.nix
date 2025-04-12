@@ -6,6 +6,7 @@
     ./hyprland
     ./zsh.nix
     ./neovim
+    ./udiskie.nix
   ];
 
   home.packages = with pkgs; [
@@ -20,6 +21,7 @@
     wl-clipboard
     catppuccin-cursors.mochaDark
     libreoffice
+    yazi
   ];
 
   gtk.enable = true;
