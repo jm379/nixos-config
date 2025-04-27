@@ -6,7 +6,6 @@
     ./hyprland
     ./zsh.nix
     ./neovim
-    ./udiskie.nix
   ];
 
   home.packages = with pkgs; [

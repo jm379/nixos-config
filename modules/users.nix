@@ -7,6 +7,9 @@
     packages = with pkgs; [
       zsh
       docker
+      jmtpfs
+      glib
+      eog
     ];
   };
 
@@ -19,6 +22,7 @@
 
   fonts.packages = with pkgs; [
     nerd-fonts._0xproto
+    inter
   ];
 
   programs = {
@@ -31,7 +35,8 @@
   };
 
   services = {
-    udisks2.enable=true;
+    udisks2.enable = true;
+    gvfs.enable = true;
     displayManager = {
       autoLogin.enable = true;
       autoLogin.user = "rcav";

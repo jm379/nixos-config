@@ -10,15 +10,16 @@
     extraConfig.pipewire."92-low-latency" = {
       "context.properties" = {
         "default.clock.rate" = 48000;
-        "default.clock.quantum" = 32;
+        "default.clock.quantum" = 1024;
         "default.clock.min-quantum" = 32;
-        "default.clock.max-quantum" = 32;
-        # "default.clock.quantum" = 2048;
-        # "default.clock.min-quantum" = 2048;
-        # "default.clock.max-quantum" = 4096;
+        "default.clock.max-quantum" = 4096;
+        "default.clock.allowed-rates" = [ 44100 48000 ];
       };
     };
   };
 
-  environment.systemPackages = with pkgs; [ pwvucontrol ];
+  environment.systemPackages = with pkgs; [ 
+    pwvucontrol
+    helvum
+  ];
 }

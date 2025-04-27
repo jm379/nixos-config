@@ -14,6 +14,14 @@
         gaps_out = 8;
       };
 
+      render = {
+        cm_fs_passthrough = 2;
+      };
+  
+      experimental = {
+        xx_color_management_v4 = false;
+      };
+
       env = [
         "HYPRCURSOR_THEME,catppuccin-mocha-dark-cursors"
         "HYPRCURSOR_SIZE,28"
