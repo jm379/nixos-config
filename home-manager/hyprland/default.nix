@@ -20,8 +20,8 @@
   
       experimental = {
         # Auto HDR
-        # xx_color_management_v4 = false;
-        xx_color_management_v4 = true;
+        xx_color_management_v4 = false;
+        # xx_color_management_v4 = true;
       };
 
       env = [
