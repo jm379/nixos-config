@@ -19,7 +19,9 @@
       };
   
       experimental = {
-        xx_color_management_v4 = false;
+        # Auto HDR
+        # xx_color_management_v4 = false;
+        xx_color_management_v4 = true;
       };
 
       env = [
@@ -28,7 +30,7 @@
       ];
 
       monitor = [
-        ", 3840x2160@120, auto, 1.5"
+        ", 3840x2160@120, auto, 1.5, bitdepth, 10"
       ];
 
       decoration = {
