@@ -51,6 +51,7 @@
         # Windows
         "$mod, Q, killactive"
         "$mod, F, fullscreen, 1"
+        "$mod SHIFT, F, fullscreen, 0"
         "$mod, M, layoutmsg, movetoroot"
         "$mod, H, movefocus, l"
 	    "$mod, J, movefocus, d"

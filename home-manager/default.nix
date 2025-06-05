@@ -21,6 +21,8 @@
     catppuccin-cursors.mochaDark
     libreoffice
     yazi
+    gimp3-with-plugins
+    libsForQt5.kdenlive
   ];
 
   gtk.enable = true;

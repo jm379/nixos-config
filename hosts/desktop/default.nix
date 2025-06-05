@@ -15,6 +15,7 @@
     ../../modules/steam.nix
     ../../modules/users.nix
     ../../modules/1password.nix
+    ../../modules/obs.nix
     inputs.home-manager.nixosModules.default
   ];
 

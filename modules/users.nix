@@ -17,6 +17,9 @@
     rootless = {
       enable = true;
       setSocketVariable = true;
+      daemon.settings = {
+        data-root = "/mnt/ext/data/docker";
+      };
     };
   };
 
