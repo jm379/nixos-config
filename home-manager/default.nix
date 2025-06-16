@@ -9,20 +9,20 @@
   ];
 
   home.packages = with pkgs; [
-    zip
-    unzip
-    ripgrep
+    brave
+    catppuccin-cursors.mochaDark
+    clipse
     fd
     font-awesome
-    swww
-    waypaper
-    clipse
-    wl-clipboard
-    catppuccin-cursors.mochaDark
-    libreoffice
-    yazi
     gimp3-with-plugins
+    libreoffice
     libsForQt5.kdenlive
+    ripgrep
+    swww
+    unzip
+    waypaper
+    yazi
+    zip
   ];
 
   gtk.enable = true;
